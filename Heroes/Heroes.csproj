@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5278B59-67CA-424B-B4BA-64CA5A9057A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Heroes</RootNamespace>
+    <AssemblyName>Heroes</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'All|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\All\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2911.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectDraw, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectPlay, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBattle.Designer.cs">
+      <DependentUpon>frmBattle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseHero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseHero.Designer.cs">
+      <DependentUpon>frmChooseHero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuel.Designer.cs">
+      <DependentUpon>frmDuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuelNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuelNetwork.Designer.cs">
+      <DependentUpon>frmDuelNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame.Designer.cs">
+      <DependentUpon>frmGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateGame.Designer.cs">
+      <DependentUpon>frmCreateGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame2.Designer.cs">
+      <DependentUpon>frmGame2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoin.Designer.cs">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoinGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoinGame.Designer.cs">
+      <DependentUpon>frmJoinGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtherHeroInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtherHeroInfo.Designer.cs">
+      <DependentUpon>frmOtherHeroInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBattle.resx">
+      <DependentUpon>frmBattle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseHero.resx">
+      <DependentUpon>frmChooseHero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateGame.resx">
+      <DependentUpon>frmCreateGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuel.resx">
+      <DependentUpon>frmDuel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuelNetwork.resx">
+      <DependentUpon>frmDuelNetwork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame.resx">
+      <DependentUpon>frmGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame2.resx">
+      <DependentUpon>frmGame2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJoin.resx">
+      <DependentUpon>frmJoin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJoinGame.resx">
+      <DependentUpon>frmJoinGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtherHeroInfo.resx">
+      <DependentUpon>frmOtherHeroInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Remoting\Game.cs" />
+    <Compile Include="Remoting\GameSetting.cs" />
+    <Compile Include="Remoting\GameCell.cs" />
+    <Compile Include="Remoting\Register.cs" />
+    <Compile Include="Remoting\RegisterServer.cs" />
+    <Compile Include="Setting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Heroes.Core.Battle\Heroes.Core.Battle.csproj">
+      <Project>{65207D88-6053-4BB0-8963-7CD1526BA5EA}</Project>
+      <Name>Heroes.Core.Battle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Heroes.Core.Castle\Heroes.Core.Castle.csproj">
+      <Project>{C43CCD9C-E614-4A56-BD78-8DD2B9F24E49}</Project>
+      <Name>Heroes.Core.Castle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Heroes.Core.Map\Heroes.Core.Map.csproj">
+      <Project>{4386512D-6AAC-465E-988C-A1A22B3010F5}</Project>
+      <Name>Heroes.Core.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Heroes.Core.Remoting\Heroes.Core.Remoting.csproj">
+      <Project>{6AEF9F10-4604-4607-B10D-3CE05C9C603E}</Project>
+      <Name>Heroes.Core.Remoting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Heroes.Core\Heroes.Core.csproj">
+      <Project>{D506E665-8A9A-4633-A684-5C7628863BB4}</Project>
+      <Name>Heroes.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Music\war01.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\war02.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PostBuild.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if not exist "$(TargetDir)Images" mkdir "$(TargetDir)Images"
+if not exist "$(TargetDir)Images\Core" mkdir "$(TargetDir)Images\Core"
+if not exist "$(TargetDir)Images\Core\Armies" mkdir "$(TargetDir)Images\Core\Armies"
+if not exist "$(TargetDir)Images\Core\Armies\Slot" mkdir "$(TargetDir)Images\Core\Armies\Slot"
+if not exist "$(TargetDir)Images\Core\Heros" mkdir "$(TargetDir)Images\Core\Heros"
+if not exist "$(TargetDir)Images\Core\Heros\Info" mkdir "$(TargetDir)Images\Core\Heros\Info"
+if not exist "$(TargetDir)Images\Core\Skills" mkdir "$(TargetDir)Images\Core\Skills"
+if not exist "$(TargetDir)Images\Core\Skills\Info" mkdir "$(TargetDir)Images\Core\Skills\Info"
+if not exist "$(TargetDir)Images\Core\Spells" mkdir "$(TargetDir)Images\Core\Spells"
+if not exist "$(TargetDir)Images\Core\Spells\Book" mkdir "$(TargetDir)Images\Core\Spells\Book"
+if not exist "$(TargetDir)Images\Core\Artifacts" mkdir "$(TargetDir)Images\Core\Artifacts"
+if not exist "$(TargetDir)Images\Core\Artifacts\Info" mkdir "$(TargetDir)Images\Core\Artifacts\Info"
+if not exist "$(TargetDir)Images\Castle" mkdir "$(TargetDir)Images\Castle"
+if not exist "$(TargetDir)Images\Castle\Buildings" mkdir "$(TargetDir)Images\Castle\Buildings"
+if not exist "$(TargetDir)Images\Battle" mkdir "$(TargetDir)Images\Battle"
+if not exist "$(TargetDir)Images\Battle\Sprites" mkdir "$(TargetDir)Images\Battle\Sprites"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies" mkdir "$(TargetDir)Images\Battle\Sprites\Armies"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Pikeman" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Pikeman"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Halberdier" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Halberdier"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Archer" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Archer"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Marksman" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Marksman"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Griffin" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Griffin"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\RoyalGriffin" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\RoyalGriffin"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Swordsman" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Swordsman"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Crusader" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Crusader"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Monk" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Monk"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Zealot" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Zealot"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Cavalier" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Cavalier"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Champion" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Champion"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Angel" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Angel"
+if not exist "$(TargetDir)Images\Battle\Sprites\Armies\Archangel" mkdir "$(TargetDir)Images\Battle\Sprites\Armies\Archangel"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells" mkdir "$(TargetDir)Images\Battle\Sprites\Spells"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\Haste" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\Haste"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\MagicArrow" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\MagicArrow"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\LightningBolt" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\LightningBolt"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\FireBall" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\FireBall"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\Inferno" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\Inferno"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\IceBolt" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\IceBolt"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\MeteorShower" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\MeteorShower"
+if not exist "$(TargetDir)Images\Battle\Sprites\Spells\Implosion" mkdir "$(TargetDir)Images\Battle\Sprites\Spells\Implosion"
+xcopy /D /Y "$(SolutionDir)Heroes.Core\Images\Core\Armies\Slot\*.bmp" "$(TargetDir)Images\Core\Armies\Slot"
+xcopy /D /Y "$(SolutionDir)Heroes.Core\Images\Core\Heros\Info\*.bmp" "$(TargetDir)Images\Core\Heros\Info"
+xcopy /D /Y "$(SolutionDir)Heroes.Core\Images\Core\Skills\Info\*.bmp" "$(TargetDir)Images\Core\Skills\Info"
+xcopy /D /Y "$(SolutionDir)Heroes.Core\Images\Core\Spells\Book\*.png" "$(TargetDir)Images\Core\Spells\Book"
+xcopy /D /Y "$(SolutionDir)Heroes.Core\Images\Core\Artifacts\Info\*.png" "$(TargetDir)Images\Core\Artifacts\Info"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Castle\Images\Castle\Buildings\*.png" "$(TargetDir)Images\Castle\Buildings"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Pikeman\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Pikeman"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Halberdier\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Halberdier"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Archer\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Archer"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Marksman\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Marksman"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Griffin\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Griffin"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\RoyalGriffin\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\RoyalGriffin"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Swordsman\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Swordsman"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Crusader\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Crusader"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Monk\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Monk"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Zealot\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Zealot"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Cavalier\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Cavalier"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Champion\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Champion"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Angel\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Angel"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Armies\Archangel\*.png" "$(TargetDir)Images\Battle\Sprites\Armies\Archangel"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\Haste\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\Haste"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\MagicArrow\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\MagicArrow"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\LightningBolt\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\LightningBolt"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\FireBall\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\FireBall"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\Inferno\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\Inferno"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\IceBolt\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\IceBolt"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\MeteorShower\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\MeteorShower"
+xcopy /D /Y "$(SolutionDir)Heroes.Core.Battle\Images\Battle\Sprites\Spells\Implosion\*.png" "$(TargetDir)Images\Battle\Sprites\Spells\Implosion"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
