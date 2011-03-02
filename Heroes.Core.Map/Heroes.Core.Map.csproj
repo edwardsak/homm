@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4386512D-6AAC-465E-988C-A1A22B3010F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Heroes.Core.Map</RootNamespace>
+    <AssemblyName>Heroes.Core.Map</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'All|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\All\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Armies\Angel.cs" />
+    <Compile Include="Armies\Archer.cs" />
+    <Compile Include="Armies\Crusader.cs" />
+    <Compile Include="Armies\Griffin.cs" />
+    <Compile Include="Armies\Pikeman.cs" />
+    <Compile Include="Armies\Swordman.cs" />
+    <Compile Include="Cell2.cs" />
+    <Compile Include="Cell3.cs" />
+    <Compile Include="frmHeroInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeroInfo.Designer.cs">
+      <DependentUpon>frmHeroInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHeroSkill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeroSkill.Designer.cs">
+      <DependentUpon>frmHeroSkill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevelUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevelUp.Designer.cs">
+      <DependentUpon>frmLevelUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMap3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMap3.Designer.cs">
+      <DependentUpon>frmMap3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gv.cs" />
+    <Compile Include="Heros\Knight.cs" />
+    <Compile Include="Monsters\Monster.cs" />
+    <Compile Include="Monsters\Pikeman.cs" />
+    <Compile Include="Terrain\MapTerrain.cs" />
+    <Compile Include="Town.cs" />
+    <Compile Include="Cell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMap.designer.cs">
+      <DependentUpon>frmMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hero.cs" />
+    <Compile Include="Mine.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMap.resx">
+      <DependentUpon>frmMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Heroes.Core\Heroes.Core.csproj">
+      <Project>{D506E665-8A9A-4633-A684-5C7628863BB4}</Project>
+      <Name>Heroes.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmHeroInfo.resx">
+      <DependentUpon>frmHeroInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeroSkill.resx">
+      <DependentUpon>frmHeroSkill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevelUp.resx">
+      <DependentUpon>frmLevelUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMap3.resx">
+      <DependentUpon>frmMap3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Map\cellpassibility.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Images\Map\2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Map\2_s.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pskil42e.bmp" />
+    <None Include="Resources\pskil42s.bmp" />
+    <None Include="Resources\pskil42k.bmp" />
+    <None Include="Resources\pskil42p.bmp" />
+    <None Include="Resources\pskil42d.bmp" />
+    <None Include="Resources\pskil42a.bmp" />
+    <None Include="Resources\HeroScr4.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
