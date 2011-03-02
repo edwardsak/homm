@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C43CCD9C-E614-4A56-BD78-8DD2B9F24E49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Heroes.Core.Castle</RootNamespace>
+    <AssemblyName>Heroes.Core.Castle</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'All|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\All\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Armies\Archer.cs" />
+    <Compile Include="Armies\Griffin.cs" />
+    <Compile Include="Armies\PikeMan.cs" />
+    <Compile Include="Armies\Swordsmen.cs" />
+    <Compile Include="CastleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CastleView.Designer.cs">
+      <DependentUpon>CastleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyAngel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyAngel.Designer.cs">
+      <DependentUpon>frmBuyAngel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyArchangel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyArchangel.Designer.cs">
+      <DependentUpon>frmBuyArchangel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyArcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyArcher.Designer.cs">
+      <DependentUpon>frmBuyArcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyCavalier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyCavalier.Designer.cs">
+      <DependentUpon>frmBuyCavalier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyChampion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyChampion.Designer.cs">
+      <DependentUpon>frmBuyChampion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyCrusader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyCrusader.Designer.cs">
+      <DependentUpon>frmBuyCrusader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyGriffin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyGriffin.Designer.cs">
+      <DependentUpon>frmBuyGriffin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyHalberdier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyHalberdier.Designer.cs">
+      <DependentUpon>frmBuyHalberdier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyMarksmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyMarksmen.Designer.cs">
+      <DependentUpon>frmBuyMarksmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyMonks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyMonks.Designer.cs">
+      <DependentUpon>frmBuyMonks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyPikemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyPikemen.designer.cs">
+      <DependentUpon>frmBuyPikemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyRoyalGriffin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyRoyalGriffin.Designer.cs">
+      <DependentUpon>frmBuyRoyalGriffin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuySpellBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuySpellBook.Designer.cs">
+      <DependentUpon>frmBuySpellBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuySwordsmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuySwordsmen.Designer.cs">
+      <DependentUpon>frmBuySwordsmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuyZealot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuyZealot.Designer.cs">
+      <DependentUpon>frmBuyZealot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCastle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCastle.designer.cs">
+      <DependentUpon>frmCastle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonBuy.Designer.cs">
+      <DependentUpon>frmCommonBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonBuyUpg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonBuyUpg.Designer.cs">
+      <DependentUpon>frmCommonBuyUpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFort.designer.cs">
+      <DependentUpon>frmFort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShipyard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShipyard.Designer.cs">
+      <DependentUpon>frmShipyard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplitArmy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplitArmy.Designer.cs">
+      <DependentUpon>frmSplitArmy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTown.designer.cs">
+      <DependentUpon>frmTown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyButton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CastleView.resx">
+      <DependentUpon>CastleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyAngel.resx">
+      <DependentUpon>frmBuyAngel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyArchangel.resx">
+      <DependentUpon>frmBuyArchangel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyArcher.resx">
+      <DependentUpon>frmBuyArcher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyCavalier.resx">
+      <DependentUpon>frmBuyCavalier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyChampion.resx">
+      <DependentUpon>frmBuyChampion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyCrusader.resx">
+      <DependentUpon>frmBuyCrusader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyGriffin.resx">
+      <DependentUpon>frmBuyGriffin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyHalberdier.resx">
+      <DependentUpon>frmBuyHalberdier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyMarksmen.resx">
+      <DependentUpon>frmBuyMarksmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyMonks.resx">
+      <DependentUpon>frmBuyMonks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyPikemen.resx">
+      <DependentUpon>frmBuyPikemen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyRoyalGriffin.resx">
+      <DependentUpon>frmBuyRoyalGriffin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuySpellBook.resx">
+      <DependentUpon>frmBuySpellBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuySwordsmen.resx">
+      <DependentUpon>frmBuySwordsmen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuyZealot.resx">
+      <DependentUpon>frmBuyZealot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCastle.resx">
+      <DependentUpon>frmCastle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonBuy.resx">
+      <DependentUpon>frmCommonBuy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonBuyUpg.resx">
+      <DependentUpon>frmCommonBuyUpg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFort.resx">
+      <DependentUpon>frmFort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShipyard.resx">
+      <DependentUpon>frmShipyard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplitArmy.resx">
+      <DependentUpon>frmSplitArmy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTown.resx">
+      <DependentUpon>frmTown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Heroes.Core\Heroes.Core.csproj">
+      <Project>{D506E665-8A9A-4633-A684-5C7628863BB4}</Project>
+      <Name>Heroes.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buypikemem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipipike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archerTowerArcher.png" />
+    <None Include="Resources\Archer1.png" />
+    <None Include="Resources\BasicCastle.png" />
+    <None Include="Resources\ArcherTower.png" />
+    <None Include="Resources\Barracks.png" />
+    <None Include="Resources\BasicTavern.png" />
+    <None Include="Resources\Blacksmith.png" />
+    <None Include="Resources\Blacksmith1.png" />
+    <None Include="Resources\Blacksmith11.png" />
+    <None Include="Resources\ArcherTower1.png" />
+    <None Include="Resources\Barracks1.png" />
+    <None Include="Resources\Angels.png" />
+    <None Include="Resources\Archangels.png" />
+    <None Include="Resources\BuildNewShip1.png" />
+    <None Include="Resources\ArcherTowerDone.png" />
+    <None Include="Resources\BarracksDone.png" />
+    <None Include="Resources\BlacksmithDone.png" />
+    <None Include="Resources\BrotherhoodDone.png" />
+    <None Include="Resources\BrotherhoodDone1.png" />
+    <None Include="Resources\ArcherTowerUpg2.png" />
+    <None Include="Resources\BarracksUpg2.png" />
+    <None Include="Resources\ArmySelection.png" />
+    <Content Include="Resources\buyArcher.png" />
+    <None Include="Resources\buySwordsmen.png" />
+    <None Include="Resources\buyGriffin.png" />
+    <None Include="Resources\buyArmy.png" />
+    <None Include="Resources\buyArmy1.png" />
+    <None Include="Resources\CapitalDone.png" />
+    <None Include="Resources\Capitall.png" />
+    <None Include="Resources\CapitalOut.png" />
+    <None Include="Resources\buySpellBook.png" />
+    <Content Include="Resources\castle.png" />
+    <None Include="Resources\GriffinGriffinTower.png" />
+    <None Include="Resources\done.png" />
+    <None Include="Resources\confirm.png" />
+    <None Include="Resources\GTMNUBAK.png" />
+    <None Include="Resources\GTMNUBAK1.png" />
+    <None Include="Resources\Griffin1.png" />
+    <None Include="Resources\castleLow.png" />
+    <None Include="Resources\CastleHall.bmp" />
+    <None Include="Resources\GriffinBastion.png" />
+    <None Include="Resources\GriffinTower.png" />
+    <None Include="Resources\GuardHouse.png" />
+    <None Include="Resources\Citadel1.png" />
+    <None Include="Resources\GriffinBastion1.png" />
+    <None Include="Resources\GriffinTower1.png" />
+    <None Include="Resources\castlebelowbar.png" />
+    <None Include="Resources\CastleBlock.bmp" />
+    <None Include="Resources\Cavalier.png" />
+    <None Include="Resources\Crusaders.png" />
+    <None Include="Resources\Champions.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\CastleDone.png" />
+    <None Include="Resources\Castlel.png" />
+    <None Include="Resources\GriffinBastionDone.png" />
+    <None Include="Resources\GriffinTowerDone.png" />
+    <None Include="Resources\GuardhouseDone.png" />
+    <None Include="Resources\GriffinTowerUpg2.png" />
+    <None Include="Resources\CityHall.png" />
+    <None Include="Resources\CityHallOut.png" />
+    <None Include="Resources\CastleOut.png" />
+    <None Include="Resources\Fort.png" />
+    <None Include="Resources\Citadel.png" />
+    <Content Include="Resources\guardhousePikemen.png" />
+    <None Include="Resources\TownScrn.bmp" />
+    <None Include="Resources\TBcsback.bmp" />
+    <None Include="Resources\ShipNoRiver.png" />
+    <None Include="Resources\ShipyardNoRiver.png" />
+    <None Include="Resources\Shipyard.png" />
+    <None Include="Resources\Mage3.png" />
+    <None Include="Resources\Mage2.png" />
+    <None Include="Resources\Mage4.png" />
+    <None Include="Resources\Silo.png" />
+    <None Include="Resources\Shipyard1.png" />
+    <None Include="Resources\MageGuildLevel14.png" />
+    <None Include="Resources\MageGuildLevel2.png" />
+    <None Include="Resources\UpgMonasteryTown.png" />
+    <None Include="Resources\lighthouse22.png" />
+    <None Include="Resources\PortalofGloryUpg2.png" />
+    <None Include="Resources\Monastery2.png" />
+    <None Include="Resources\GuardhouseUpg2.png" />
+    <None Include="Resources\TrainingGroundUpg2.png" />
+    <None Include="Resources\TBCsMag2.png" />
+    <None Include="Resources\TBCsM401.png" />
+    <None Include="Resources\TBCsM301.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\UpgTrainingGrounds.png" />
+    <None Include="Resources\UpgPortalofGlory.png" />
+    <None Include="Resources\UpgMonastery.png" />
+    <None Include="Resources\UpgGuardhouse.png" />
+    <None Include="Resources\UpgGriffinTower.png" />
+    <None Include="Resources\UpgBarracks.png" />
+    <None Include="Resources\UpgArcherTower.png" />
+    <None Include="Resources\TraininggroundDone.png" />
+    <None Include="Resources\StableDone.png" />
+    <None Include="Resources\ResourceSiloDone.png" />
+    <None Include="Resources\ResourceSilo.png" />
+    <None Include="Resources\PortalofGloryDone.png" />
+    <None Include="Resources\MonasteryDone.png" />
+    <None Include="Resources\MageGuildLevel13.png" />
+    <None Include="Resources\MageGuildLevel4Done.png" />
+    <None Include="Resources\LighthouseDone.png" />
+    <None Include="Resources\Lighthouse.png" />
+    <None Include="Resources\Ship.png" />
+    <None Include="Resources\Marksmen.png" />
+    <None Include="Resources\RoyalGriffins.png" />
+    <None Include="Resources\Zealots.png" />
+    <None Include="Resources\Halberdiers.png" />
+    <None Include="Resources\Monks.png" />
+    <None Include="Resources\PortalofGloryAngels.png" />
+    <None Include="Resources\TrainingGroundCavaliers.png" />
+    <None Include="Resources\MonasteryMonk.png" />
+    <None Include="Resources\MageGuildLevel11.png" />
+    <None Include="Resources\Marketplace1.png" />
+    <None Include="Resources\Tavern1.png" />
+    <None Include="Resources\TownHall1.png" />
+    <None Include="Resources\VillageHall.png" />
+    <None Include="Resources\TrainingGround.png" />
+    <None Include="Resources\TownHall.png" />
+    <None Include="Resources\Tavern.png" />
+    <None Include="Resources\Stable.png" />
+    <None Include="Resources\PortalOfGlory.png" />
+    <None Include="Resources\Monastery.png" />
+    <None Include="Resources\Marketplace.png" />
+    <None Include="Resources\MageGuildLevel1.png" />
+    <None Include="Resources\PortalOfGloryTown.png" />
+    <None Include="Resources\TrainingGrounds.png" />
+    <None Include="Resources\MonasteryTown.png" />
+    <None Include="Resources\Stables.png" />
+    <None Include="Resources\Swordsmen.png" />
+    <None Include="Resources\pikemen1.png" />
+    <None Include="Resources\split1.png" />
+    <None Include="Resources\splitArmy.png" />
+    <None Include="Resources\SwordsmenBarrack.png" />
+    <None Include="Resources\guardhousePikemen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Castle\Buildings\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

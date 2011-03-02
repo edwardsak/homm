@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Barracks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barracks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcherTowerUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcherTowerUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tavern1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tavern1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blacksmith1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blacksmith1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\castle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stables" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stables.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swordsmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Swordsmen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buySwordsmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buySwordsmen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinBastion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinBastion1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marksmen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marksmen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuardHouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuardHouse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarracksUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarracksUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="castleLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\castleLow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgTrainingGrounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgTrainingGrounds.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalofGloryUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortalofGloryUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinTower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinTower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TBCsMag2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TBCsMag2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lighthouse22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lighthouse22.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonasteryMonk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonasteryMonk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastleBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastleBlock.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinGriffinTower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinGriffinTower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Archer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archer1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikemen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikemen1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CapitalDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CapitalDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buyArmy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buyArmy1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinTowerUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinTowerUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BasicCastle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BasicCastle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel4Done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel4Done.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipNoRiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShipNoRiver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TownHall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TownHall1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barracks1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barracks1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crusaders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crusaders.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwordsmenBarrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwordsmenBarrack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrainingGroundCavaliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrainingGroundCavaliers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="castlebelowbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\castlebelowbar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TownHall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TownHall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraininggroundDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TraininggroundDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinBastionDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinBastionDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Halberdiers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Halberdiers.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lighthouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lighthouse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zealots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zealots.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrainingGroundUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrainingGroundUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Citadel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Citadel1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shipyard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shipyard1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marketplace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marketplace.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Castlel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Castlel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cavalier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cavalier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Griffin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Griffin1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BasicTavern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BasicTavern.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mage4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mage4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ship.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Champions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Champions.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GTMNUBAK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTMNUBAK1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TBCsM401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TBCsM401.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchase1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchase1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuardhouseUpg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuardhouseUpg2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Angels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Angels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgMonasteryTown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgMonasteryTown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tavern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tavern.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buypikemem2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buypikemem2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TBcsback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TBcsback.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipyardNoRiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShipyardNoRiver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GTMNUBAK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTMNUBAK.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuardhouseDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuardhouseDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LighthouseDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LighthouseDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Citadel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Citadel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guardhousePikemen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardhousePikemen1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VillageHall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageHall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlacksmithDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlacksmithDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgMonastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgMonastery.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcherTower1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcherTower1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel13.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinBastion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinBastion.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="split1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\split1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monastery.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgBarracks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgBarracks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buyArmy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buyArmy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pipipike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pipipike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TBCsM301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TBCsM301.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrotherhoodDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrotherhoodDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\done.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonasteryDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonasteryDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blacksmith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blacksmith.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgPortalofGlory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgPortalofGlory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buyGriffin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buyGriffin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BuildNewShip1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BuildNewShip1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoyalGriffins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoyalGriffins.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Archangels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archangels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrainingGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrainingGround.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalOfGlory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortalOfGlory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blacksmith11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blacksmith11.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalofGloryDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortalofGloryDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TownScrn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TownScrn.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marketplace1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Marketplace1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StableDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StableDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinTowerDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinTowerDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalOfGloryTown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortalOfGloryTown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgArcherTower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgArcherTower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fort.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrotherhoodDone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrotherhoodDone1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monastery2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monastery2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MageGuildLevel14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MageGuildLevel14.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityHall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CityHall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buySpellBook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buySpellBook.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shipyard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shipyard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrainingGrounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrainingGrounds.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastleDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastleDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GriffinTower1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GriffinTower1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastleHall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastleHall.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResourceSiloDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResourceSiloDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capitall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capitall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcherTowerDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcherTowerDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BarracksDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BarracksDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mage2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResourceSilo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResourceSilo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonasteryTown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonasteryTown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityHallOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CityHallOut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArcherTower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArcherTower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buyArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buyArcher.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CapitalOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CapitalOut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splitArmy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splitArmy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalofGloryAngels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortalofGloryAngels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgGuardhouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgGuardhouse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aa.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="archerTowerArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\archerTowerArcher.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mage3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CastleOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CastleOut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgGriffinTower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgGriffinTower.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Silo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Silo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArmySelection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArmySelection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
