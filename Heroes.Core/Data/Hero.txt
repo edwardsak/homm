@@ -1,0 +1,17 @@
+﻿id,race,type,name,sex,specialId,a,d,p,k,infoImg,desc
+1,1,1,Edric,1,1,2,2,1,1,HPL002KN.bmp,Edric's father was the first man in Erathia to domesticate and train a wild Griffin. Now, Edric continues what his father started by setting up Erathia's largest Griffin breeding grounds for use in the King's armies.
+2,1,1,Lord Haart,1,2,2,2,1,1,HPL004KN.bmp,
+3,1,1,Orrin,1,3,2,2,1,1,HPL000KN.bmp,
+4,1,1,Sir Christian,1,4,2,2,1,1,HPL006KN.bmp,
+5,1,1,Sorsha,2,5,2,2,1,1,HPL005KN.bmp,
+6,1,1,Sylvia,2,6,2,2,1,1,HPL003KN.bmp,
+7,1,1,Tyris,1,7,2,2,1,1,HPL007KN.bmp,
+8,1,1,Valeska,1,8,2,2,1,1,HPL001KN.bmp,
+9,1,2,Adela,2,9,1,0,2,2,HPL009CL.bmp,
+10,1,2,Adelaide,2,10,1,0,2,2,HPL011CL.bmp,
+11,1,2,Caitlin,2,11,1,0,2,2,HPL015CL.bmp,
+12,1,2,Cuthbert,1,12,1,0,2,2,HPL010CL.bmp,
+13,1,2,Ingham,1,13,1,0,2,2,HPL012CL.bmp,
+14,1,2,Loynis,1,14,1,0,2,2,HPL014CL.bmp,
+15,1,2,Rion,1,15,1,0,2,2,HPL008CL.bmp,
+16,1,2,Sanya,2,16,1,0,2,2,HPL013CL.bmp,

@@ -1,0 +1,8 @@
+﻿id,name,w,m,o,s,c,g,gold,desc
+1,Saw Mill,2,0,0,0,0,0,0,
+2,Mercury Mine,0,1,0,0,0,0,0,
+3,Ore Mine,0,0,2,0,0,0,0,
+4,Sulfur Mine,0,0,0,1,0,0,0,
+5,Crystal Mine,0,0,0,0,1,0,0,
+6,Gem Mine,0,0,0,0,0,1,0,
+7,Gold Mine,0,0,0,0,0,0,2000,

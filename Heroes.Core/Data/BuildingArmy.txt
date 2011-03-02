@@ -1,0 +1,3 @@
+﻿buildingId,armyId1,armyId2,....
+20,1
+28,1,2

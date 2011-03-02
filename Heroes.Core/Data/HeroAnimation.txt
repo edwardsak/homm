@@ -1,0 +1,7 @@
+﻿herotype,sex,atype,folder,prefix,ext,turn,no1,no2,...
+1,1,S,Knight\Male\,ch00_,png,2,01
+1,1,CB,Knight\Male\,ch00_,png,2,13,14,15,16,17
+1,1,CE,Knight\Male\,ch00_,png,2,18,19,20
+1,2,S,Knight\Female\,ch00_,png,2,01
+1,2,CB,Knight\Female\,ch00_,png,2,13,14,15,16,17
+1,2,CE,Knight\Female\,ch00_,png,2,18,19,20

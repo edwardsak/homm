@@ -1,0 +1,10 @@
+﻿id,name,desc
+1,Castle,
+2,Rampart,
+3,Tower,
+4,Inferno,
+5,Necropolis,
+6,Dungeon,
+7,Stronghold,
+8,Fortress,
+9,Conflux,
