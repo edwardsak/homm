@@ -1,0 +1,4 @@
+﻿uid,name,level,exp,a,d,p,k, 
+skillId,skillLevel,...
+spells
+artifacts
