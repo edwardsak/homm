@@ -240,6 +240,7 @@ namespace Heroes.Core
                 while (!sr.EndOfStream)
                 {
                     strLine = sr.ReadLine();
+                    if (strLine.Substring(0, 1) == "#") continue;
 
                     // id,race,name,w,m,o,s,c,g,gold,lv,exp,a,d,minDmg,maxDmg,h,speed,canShot,NoofShot,IsUnlimitedShot,NoOfRetailate,IsUnlimitRetaliate,noOfAttack,moveType,handToHandPenalty,isbig,slotImg,desc
                     string[] datas = strLine.Split(new char[] { ',' }, 29);
