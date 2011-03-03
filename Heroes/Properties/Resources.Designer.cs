@@ -59,12 +59,5 @@ namespace Heroes.Properties {
                 resourceCulture = value;
             }
         }
-        
-        internal static System.Drawing.Bitmap cbar {
-            get {
-                object obj = ResourceManager.GetObject("cbar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

@@ -94,9 +94,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sp16MBlt.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Data\Army.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -155,6 +152,7 @@
     <Folder Include="Images\Core\Armies\Slot\" />
     <Folder Include="Images\Core\Skills\Info\" />
     <Folder Include="Images\Core\Spells\Book\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
