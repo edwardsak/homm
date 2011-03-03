@@ -17,6 +17,7 @@ HeroesServer
   .Net remoting Server application
 
 2. Where to get the resources and image files
+* you need to owned one, from official CDs *
 
 3. How to build the solution
 Open Heroes.sln with Microsoft Visual Studio 2008
