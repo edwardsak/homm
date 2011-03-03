@@ -19,5 +19,5 @@ HeroesServer
 2. Where to get the resources and image files
 
 3. How to build the solution
-
-test new branch
+Open Heroes.sln with Microsoft Visual Studio 2008
+Build
