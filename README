@@ -1,0 +1,21 @@
+1. Description of Projects
+ConvertBitmap
+  Convert bmp to png files
+Heroes
+  Main Heroes application
+Heroes.Core
+  Heroes basic class
+Heroes.Core.Battle
+  Battle screen, quick battle
+Heroes.Core.Castle
+  Castle screen
+Heroes.Core.Map
+  Big map and mini map
+Heroes.Core.Remoting
+  .Net remoting classes for multiplayer
+HeroesServer
+  .Net remoting Server application
+
+2. Where to get the resources and image files
+
+3. How to build the solution
