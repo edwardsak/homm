@@ -958,6 +958,56 @@ namespace Heroes.Core.Castle
             {
                 return;
             }
+            
+            if (_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3))
+            {
+                Heroes.Core.Building b2 = new Building();
+                b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel4]);
+
+                if (!b2.CanBuild(_town._player))
+                {
+                    MessageBox.Show("Cannot build this building.");
+                    return;
+                }
+
+                b2.DeductResources(_town._player);
+
+                _town._buildingKIds.Add(b2._id, b2);
+                _town._isBuilt = true;
+                frmCastle.build.Add(b2._id, b2);
+
+                // remove basic building
+                _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3);
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                return;
+            }
+
+            if (_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel2))
+            {
+                Heroes.Core.Building b2 = new Building();
+                b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel3]);
+
+                if (!b2.CanBuild(_town._player))
+                {
+                    MessageBox.Show("Cannot build this building.");
+                    return;
+                }
+
+                b2.DeductResources(_town._player);
+
+                _town._buildingKIds.Add(b2._id, b2);
+                _town._isBuilt = true;
+                frmCastle.build.Add(b2._id, b2);
+
+                // remove basic building
+                _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel2);
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                return;
+            }
 
             if (!_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel1))
             {
@@ -1005,55 +1055,55 @@ namespace Heroes.Core.Castle
                 return;
             }
 
-            if (!_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3))
-            {
-                Heroes.Core.Building b2 = new Building();
-                b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel3]);
+            //if (!_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3))
+            //{
+            //    Heroes.Core.Building b2 = new Building();
+            //    b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel3]);
 
-                if (!b2.CanBuild(_town._player))
-                {
-                    MessageBox.Show("Cannot build this building.");
-                    return;
-                }
+            //    if (!b2.CanBuild(_town._player))
+            //    {
+            //        MessageBox.Show("Cannot build this building.");
+            //        return;
+            //    }
 
-                b2.DeductResources(_town._player);
+            //    b2.DeductResources(_town._player);
 
-                _town._buildingKIds.Add(b2._id, b2);
-                _town._isBuilt = true;
-                frmCastle.build.Add(b2._id, b2);
+            //    _town._buildingKIds.Add(b2._id, b2);
+            //    _town._isBuilt = true;
+            //    frmCastle.build.Add(b2._id, b2);
 
-                // remove basic building
-                _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel2);
+            //    // remove basic building
+            //    _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel2);
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-                return;
-            }
+            //    this.DialogResult = DialogResult.OK;
+            //    this.Close();
+            //    return;
+            //}
 
-            if (!_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel4))
-            {
-                Heroes.Core.Building b2 = new Building();
-                b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel4]);
+            //if (!_town._buildingKIds.ContainsKey((int)Heroes.Core.BuildingIdEnum.MageGuildLevel4))
+            //{
+            //    Heroes.Core.Building b2 = new Building();
+            //    b2.CopyFrom((Heroes.Core.Building)Heroes.Core.Setting._buildings[(int)Heroes.Core.BuildingIdEnum.MageGuildLevel4]);
 
-                if (!b2.CanBuild(_town._player))
-                {
-                    MessageBox.Show("Cannot build this building.");
-                    return;
-                }
+            //    if (!b2.CanBuild(_town._player))
+            //    {
+            //        MessageBox.Show("Cannot build this building.");
+            //        return;
+            //    }
 
-                b2.DeductResources(_town._player);
+            //    b2.DeductResources(_town._player);
 
-                _town._buildingKIds.Add(b2._id, b2);
-                _town._isBuilt = true;
-                frmCastle.build.Add(b2._id, b2);
+            //    _town._buildingKIds.Add(b2._id, b2);
+            //    _town._isBuilt = true;
+            //    frmCastle.build.Add(b2._id, b2);
 
-                // remove basic building
-                _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3);
+            //    // remove basic building
+            //    _town._buildingKIds.Remove((int)Heroes.Core.BuildingIdEnum.MageGuildLevel3);
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-                return;
-            }
+            //    this.DialogResult = DialogResult.OK;
+            //    this.Close();
+            //    return;
+            //}
             this.Close();
         }
 

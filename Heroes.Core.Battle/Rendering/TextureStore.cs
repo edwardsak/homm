@@ -72,11 +72,11 @@ namespace Heroes.Core.Battle.Rendering
         /// <param name="progressReport"></param>
         public void LoadTextures(Device device, EventHandler progressReport)
         {
-            _texBg = new TexturePlus(device, string.Format(@"Heroes.Core.Battle.Images.Battle.Bitmaps.CmBkMag.dds"));
-            _texBar = new TexturePlus(device, string.Format(@"Heroes.Core.Battle.Images.Battle.Bitmaps.cbar.dds"));
+            _texBg = new TexturePlus(device, string.Format(@"{0}\Images\Battle\Bitmaps\CmBkMag.dds", Heroes.Core.Setting._appStartupPath));
+            _texBar = new TexturePlus(device, string.Format(@"{0}\Images\Battle\Bitmaps\cbar.dds", Heroes.Core.Setting._appStartupPath));
 
-            _texCell = new TexturePlus(device, string.Format(@"Heroes.Core.Battle.Images.Battle.Bitmaps.CCellGrd.dds"));
-            _texCellShd = new TexturePlus(device, string.Format(@"Heroes.Core.Battle.Images.Battle.Bitmaps.CCellShd.dds"));
+            _texCell = new TexturePlus(device, string.Format(@"{0}\Images\Battle\Bitmaps\CCellGrd.dds", Heroes.Core.Setting._appStartupPath));
+            _texCellShd = new TexturePlus(device, string.Format(@"{0}\Images\Battle\Bitmaps\CCellShd.dds", Heroes.Core.Setting._appStartupPath));
 
             if (progressReport != null)
             {

@@ -84,6 +84,11 @@ namespace Heroes.Core.Castle
 
             armyPur.CalculateCost();
 
+            if (armyPur._qty == 0)
+            {
+                return;
+            }
+
             if (!armyPur.CanBuy(_town._player))
             {
                 MessageBox.Show("Not enought resources.");

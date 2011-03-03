@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4386512D-6AAC-465E-988C-A1A22B3010F5}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -52,8 +52,17 @@
     <Compile Include="Armies\Griffin.cs" />
     <Compile Include="Armies\Pikeman.cs" />
     <Compile Include="Armies\Swordman.cs" />
+    <Compile Include="BigMapDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BigMapDraw.Designer.cs">
+      <DependentUpon>BigMapDraw.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cell2.cs" />
     <Compile Include="Cell3.cs" />
+    <Compile Include="Controller.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="frmHeroInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +92,7 @@
     <Compile Include="Monsters\Monster.cs" />
     <Compile Include="Monsters\Pikeman.cs" />
     <Compile Include="Terrain\MapTerrain.cs" />
+    <Compile Include="Timer.cs" />
     <Compile Include="Town.cs" />
     <Compile Include="Cell.cs">
       <SubType>Component</SubType>
@@ -121,6 +131,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BigMapDraw.resx">
+      <DependentUpon>BigMapDraw.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHeroInfo.resx">
       <DependentUpon>frmHeroInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -150,15 +163,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Map\cellpassibility.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <Content Include="Images\Map\2.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Map\2_s.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\pskil42e.bmp" />
     <None Include="Resources\pskil42s.bmp" />
     <None Include="Resources\pskil42k.bmp" />

@@ -16,11 +16,11 @@ namespace Heroes.Core.Battle.Characters.Heros
             this._imgPath = string.Format(@"{0}\Images\Battle\Sprites\Heros\Knight", Setting._appStartupPath);
 
             this._animations._standingRightMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\Standing\ch00_01.png", _imgPath)), AnimationCueDirectionEnum.MoveToBeginning, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_01.png", _imgPath)), AnimationCueDirectionEnum.MoveToBeginning, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
             );
 
             this._animations._standingLeftMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\Standing\ch00_01f.png", _imgPath)), AnimationCueDirectionEnum.MoveToBeginning, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_01f.png", _imgPath)), AnimationCueDirectionEnum.MoveToBeginning, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
             );
 
             this._animations._standingRightFemale = this._animations._standingRightMale;
@@ -34,33 +34,33 @@ namespace Heroes.Core.Battle.Characters.Heros
 
             #region Casting
             this._animations._startCastSpellRightMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_13.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_14.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_15.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_16.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_17.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_13.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_14.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_15.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_16.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_17.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
             );
 
             this._animations._stopCastSpellRightMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_17.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_18.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_19.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_20.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_17.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_18.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_19.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_20.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _rightPt, _imgSize)
             );
 
             this._animations._startCastSpellLeftMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_13.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_14.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_15.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_16.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_17.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_13f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_14f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_15f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_16f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_17f.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
             );
 
             this._animations._stopCastSpellLeftMale = new Animation(
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_17.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_18.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_19.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
-                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\Male\CastSpell\ch00_20.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_17f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_18f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_19f.png", path)), AnimationCueDirectionEnum.MoveToNext, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize),
+                new AnimationCue(controller.TextureStore.GetTexture(controller.Device, string.Format(@"{0}\ch00_20f.png", path)), AnimationCueDirectionEnum.StayHere, BasicEngine.TurnTimeSpan.Ticks * 2, _leftPt, _imgSize)
             );
 
             this._animations._startCastSpellRightFemale = this._animations._startCastSpellRightMale;

@@ -23,6 +23,7 @@ namespace Heroes.Core.Castle
 
         Label[] lblTownGold;
         Label[] lblResources;
+        Label[] lblTime;
 
         Label[] _lblArmyInCastles;
         Label[] _lblArmyVisits;
@@ -81,7 +82,7 @@ namespace Heroes.Core.Castle
             
             this.lblTownGold = new Label[] { this.lblGold };
             this.lblResources = new Label[] { this.lblWood, this.lblMercury, this.lblOre, this.lblSulfur, this.lblCrystal, this.lblGem };
-
+            this.lblTime = new Label[] { this.lblMonth, this.lblWeek, this.lblDay };
 
             this._lblArmyInCastles = new Label[] { this.lblArmyInCastle1, this.lblArmyInCastle2, this.lblArmyInCastle3, this.lblArmyInCastle4, 
                 this.lblArmyInCastle5, this.lblArmyInCastle6, this.lblArmyInCastle7 };
@@ -460,6 +461,7 @@ namespace Heroes.Core.Castle
         {
             PplGold1(lblTownGold, _town._player._gold);
             PplResources1(lblResources, _town._player._wood, _town._player._mercury, _town._player._ore, _town._player._sulfur, _town._player._crystal, _town._player._gem);
+            //PplTIMES(lblTime, );
             PplArmies(this._lblArmyInCastles, _town._armyInCastleKSlots);
 
             PplVisitingHero();
@@ -478,6 +480,13 @@ namespace Heroes.Core.Castle
             lblSulfur.Text = sulfur.ToString();
             lblCrystal.Text = crystal.ToString();
             lblGem.Text = gem.ToString();
+        }
+
+        private void PplTIMES(Label[] txtBoxs, int mth, int wk, int dy )
+        {
+            lblMonth.Text = mth.ToString();
+            lblWeek.Text = wk.ToString();
+            lblDay.Text = dy.ToString();
         }
         #endregion
 

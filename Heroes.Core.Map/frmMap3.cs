@@ -85,6 +85,8 @@ namespace Heroes.Core.Map
         public int heroId;
         PictureBox picContainer;
 
+        Controller controller;
+
         // Variable copy from frmMap.cs
         public ArrayList _players;
         public Player _currentPlayer;
@@ -99,6 +101,7 @@ namespace Heroes.Core.Map
 
         public frmMap3()
         {
+
             // Variable copy from frmMap.cs
             _curDir = Application.StartupPath;
 
@@ -109,14 +112,21 @@ namespace Heroes.Core.Map
             // End of Variable copy from frmMap.cs
 
             InitializeComponent();
+
+            //this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
+
+
             this.StartPosition = FormStartPosition.CenterScreen;
 
             _mapTerrain = new Heroes.Core.Map.Terrain.MapTerrain();
 
             //System.Reflection.Assembly asm = System.Reflection.Assembly.Load("Heroes.Core.Map");
             //bigMap = Image.FromStream(asm.GetManifestResourceStream("Heroes.Core.Map.Images.2_s.bmp"));
-            bigMap = Image.FromFile(_dirImages + "2.bmp");
-            minimap = Image.FromFile(_dirImages + "2_s.bmp");
+            bigMap = Image.FromFile(_dirImages + "bigmap.bmp");
+            minimap = Image.FromFile(_dirImages + "minimap.bmp");
+
+            this.bigMapController1._bigMap = bigMap;
+            this.bigMapController1._mapTerrain = _mapTerrain;
                         
             timer1 = new Timer();
             timer1.Interval = 10;
@@ -129,7 +139,7 @@ namespace Heroes.Core.Map
             timer2.Tick += new EventHandler(timer2_Tick);
 
             timer3 = new Timer();
-            timer3.Interval = 30;
+            timer3.Interval = 1;
             timer3.Stop();
             timer3.Tick += new EventHandler(timer3_Tick);
 
@@ -141,7 +151,7 @@ namespace Heroes.Core.Map
             timerMoveItemCounter = 0;
 
             this.panelMiniMap.MouseClick += new MouseEventHandler(panel_MiniMap_MouseClick);
-            this.panelBigMap.MouseClick += new MouseEventHandler(panelBigMap_MouseClick);
+            this.bigMapController1.MouseClick += new MouseEventHandler(panelBigMap_MouseClick);
             this.FormClosed += new FormClosedEventHandler(frmMap3_FormClosed);
             this.dataGridView1.SelectionChanged += new EventHandler(dg_SelectionChanged);
             this.dataGridView2.SelectionChanged += new EventHandler(dg_SelectionChanged);
@@ -160,7 +170,7 @@ namespace Heroes.Core.Map
             this.panel_bottom.MouseMove += new MouseEventHandler(panel_bottom_MouseMove); 
 
             this.panel_center.MouseMove += new MouseEventHandler(panel_center_MouseMove);
-            this.panelBigMap.MouseMove += new MouseEventHandler(panel_center_MouseMove);
+            this.bigMapController1.MouseMove += new MouseEventHandler(panel_center_MouseMove);
 
             this.tabControl1.MouseMove += new MouseEventHandler(tabControl1_MouseMove);
 
@@ -184,10 +194,10 @@ namespace Heroes.Core.Map
 
             this.label3.Visible = false;
 
-            _centerPanelX = this.panelBigMap.Width / 2;
-            _centerPanelY = this.panelBigMap.Height / 2;
-            _rightCenterPanelX = bigMap.Width - this.panelBigMap.ClientSize.Width;
-            _rightCenterPanelY = bigMap.Height - this.panelBigMap.ClientSize.Height;
+            _centerPanelX = this.bigMapController1.Width / 2;
+            _centerPanelY = this.bigMapController1.Height / 2;
+            _rightCenterPanelX = bigMap.Width - this.bigMapController1.ClientSize.Width;
+            _rightCenterPanelY = bigMap.Height - this.bigMapController1.ClientSize.Height;
 
             dg = this.dataGridView1;
             dg2 = this.dataGridView2;
@@ -263,8 +273,8 @@ namespace Heroes.Core.Map
             timer1.Start();
             LoadMapSettings();
 
-            int p = bigMap.Height - this.panelBigMap.ClientSize.Height;
-            int q = bigMap.Width - this.panelBigMap.ClientSize.Width;
+            int p = bigMap.Height - this.bigMapController1.ClientSize.Height;
+            int q = bigMap.Width - this.bigMapController1.ClientSize.Width;
 
             for (int i = 0; i < _mapTerrain._totalCellRow; i++)
             {
@@ -310,7 +320,8 @@ namespace Heroes.Core.Map
             }
             catch
             {
-                tr.Close();
+                if (tr != null)
+                    tr.Close();
                 CreateAndSaveMapSettings();
             }
             finally
@@ -551,23 +562,27 @@ namespace Heroes.Core.Map
             Draw();
         }
 
-        void Draw()
+        public void Draw()
         {
             try
             {
-                Bitmap bmp = new Bitmap(this.panelBigMap.ClientSize.Width, this.panelBigMap.ClientSize.Height);
-                using (Graphics g = Graphics.FromImage(bmp))
-                {
-                    g.Clear(Color.White);
-                    g.DrawImage(bigMap, -gv._bigMapPtX, -gv._bigMapPtY, bigMap.Width, bigMap.Height);
+                this.bigMapController1.Draw();
+                //Bitmap bmp = new Bitmap(this.bigMapController1.ClientSize.Width, this.bigMapController1.ClientSize.Height);
+                //using (Graphics g = Graphics.FromImage(bmp))
+                //{
+                //    g.Clear(Color.White);
+                //    g.DrawImage(bigMap, -gv._bigMapPtX, -gv._bigMapPtY, bigMap.Width, bigMap.Height);
 
-                    _mapTerrain.Draw2(g);
-                }
+                //    _mapTerrain.Draw2(g);
 
-                using (Graphics g = this.panelBigMap.CreateGraphics())
-                {
-                    g.DrawImage(bmp, 0, 0, bmp.Width, bmp.Height);
-                }
+                    
+                //}
+
+
+                //using (Graphics g = this.panelBigMap.CreateGraphics())
+                //{
+                //    g.DrawImage(bmp, 0, 0, bmp.Width, bmp.Height);
+                //}
 
                 using (Graphics g2 = this.panelMiniMap.CreateGraphics())
                 {
@@ -577,7 +592,9 @@ namespace Heroes.Core.Map
                
             }
             catch
-            { }
+            {
+                
+            }
         }
                
         protected override void OnPaint(PaintEventArgs e)
@@ -1002,8 +1019,9 @@ namespace Heroes.Core.Map
             picContainer.Location = new Point(_mapTerrain.cellXYss[cellsRow][cellsCol][0], _mapTerrain.cellXYss[cellsRow][cellsCol][1]);
             picContainer.Image = player._heroHighlight;
             picContainer.BorderStyle = BorderStyle.None;
+            picContainer.BackColor = Color.Transparent;
             this.picContainer.MouseClick += new MouseEventHandler(picContainer_MouseClick);
-            this.panelBigMap.Controls.Add(picContainer);
+            this.bigMapController1.Controls.Add(picContainer);
         }
 
         void picContainer_MouseClick(object sender, MouseEventArgs e)
@@ -1026,8 +1044,8 @@ namespace Heroes.Core.Map
             }
             else
             {
-                mapItemX = picContainer.Location.X + 5;
-                mapItemY = picContainer.Location.Y + 5;
+                mapItemX = picContainer.Location.X + 15;
+                mapItemY = picContainer.Location.Y + 15;
                 picContainer.Location = new Point(mapItemX, mapItemY);
                 Draw();
             }

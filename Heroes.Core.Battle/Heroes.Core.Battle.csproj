@@ -161,9 +161,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\Battle\Bitmaps\CCellGrd.dds" />
-    <EmbeddedResource Include="Images\Battle\Bitmaps\CCellShd.dds" />
-    <EmbeddedResource Include="Images\Battle\Bitmaps\CmBkMag.dds" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -195,7 +192,6 @@
     <None Include="Resources\SpelTrnR.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cgriff01.dds" />
     <None Include="Resources\SpelTrnL.png" />
   </ItemGroup>
   <ItemGroup>
@@ -211,180 +207,13 @@
       <DependentUpon>frmVictory.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Images\Battle\Bitmaps\cbar.dds" />
     <None Include="Resources\archerp.png" />
-    <None Include="Resources\cgriff02.dds" />
-    <None Include="Resources\cgriff03.dds" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CPResult.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW01.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW02.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW03.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW04.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW05.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW06.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW07.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\Standing\ch00_01.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\Standing\ch00_01f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA01.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA02.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA03.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA04.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA05.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA06.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA07.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA08.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA09.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA10.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA11.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA12.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA13.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA14.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Haste\C15spA15.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_13.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_13f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_14.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_14f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_15.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_15f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_16.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_16f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_17.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_17f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_18.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_18f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_19.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_19f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_20.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Heros\Knight\Male\CastSpell\ch00_20f.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW08.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW09.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW10.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW11.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW12.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW13.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW14.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW15.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW16.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW17.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW18.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW19.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\Battle\Sprites\Spells\Bless\C01spW20.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\SpellInfoDlg.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\Battle\Sprites\Armies\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

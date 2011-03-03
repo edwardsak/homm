@@ -31,6 +31,9 @@
             this.cmdSplit = new System.Windows.Forms.Button();
             this.cmdCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.lblWeek = new System.Windows.Forms.Label();
+            this.lblMonth = new System.Windows.Forms.Label();
             this.lblGem = new System.Windows.Forms.Label();
             this.lblCrystal = new System.Windows.Forms.Label();
             this.lblSulfur = new System.Windows.Forms.Label();
@@ -55,9 +58,6 @@
             this.lblArmyInCastle2 = new System.Windows.Forms.Label();
             this.lblArmyInCastle1 = new System.Windows.Forms.Label();
             this.castleView1 = new Heroes.Core.Castle.CastleView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,9 +83,9 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::Heroes.Core.Castle.Properties.Resources.TownScrn;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblDay);
+            this.panel1.Controls.Add(this.lblWeek);
+            this.panel1.Controls.Add(this.lblMonth);
             this.panel1.Controls.Add(this.lblGem);
             this.panel1.Controls.Add(this.lblCrystal);
             this.panel1.Controls.Add(this.lblSulfur);
@@ -113,6 +113,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 224);
             this.panel1.TabIndex = 77;
+            // 
+            // lblDay
+            // 
+            this.lblDay.AutoSize = true;
+            this.lblDay.BackColor = System.Drawing.Color.Transparent;
+            this.lblDay.ForeColor = System.Drawing.Color.White;
+            this.lblDay.Location = new System.Drawing.Point(764, 204);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(35, 13);
+            this.lblDay.TabIndex = 106;
+            this.lblDay.Text = "label3";
+            // 
+            // lblWeek
+            // 
+            this.lblWeek.AutoSize = true;
+            this.lblWeek.BackColor = System.Drawing.Color.Transparent;
+            this.lblWeek.ForeColor = System.Drawing.Color.White;
+            this.lblWeek.Location = new System.Drawing.Point(716, 204);
+            this.lblWeek.Name = "lblWeek";
+            this.lblWeek.Size = new System.Drawing.Size(35, 13);
+            this.lblWeek.TabIndex = 105;
+            this.lblWeek.Text = "label2";
+            // 
+            // lblMonth
+            // 
+            this.lblMonth.AutoSize = true;
+            this.lblMonth.BackColor = System.Drawing.Color.Transparent;
+            this.lblMonth.ForeColor = System.Drawing.Color.White;
+            this.lblMonth.Location = new System.Drawing.Point(664, 204);
+            this.lblMonth.Name = "lblMonth";
+            this.lblMonth.Size = new System.Drawing.Size(35, 13);
+            this.lblMonth.TabIndex = 104;
+            this.lblMonth.Text = "label1";
             // 
             // lblGem
             // 
@@ -372,33 +405,6 @@
             this.castleView1.Size = new System.Drawing.Size(800, 374);
             this.castleView1.TabIndex = 78;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(664, 204);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 104;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(716, 204);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 105;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 204);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 106;
-            this.label3.Text = "label3";
-            // 
             // frmCastle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,8 +458,8 @@
         private System.Windows.Forms.Label lblWood;
         private System.Windows.Forms.Label lblGold;
         private System.Windows.Forms.Label lblGem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMonth;
+        private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.Label lblWeek;
     }
 }

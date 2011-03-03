@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMap3));
-            this.panelBigMap = new System.Windows.Forms.Panel();
             this.panelMiniMap = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -73,8 +71,9 @@
             this.panel_rightTop = new System.Windows.Forms.Panel();
             this.panel_right = new System.Windows.Forms.Panel();
             this.panel_center = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bigMapController1 = new Heroes.Core.Map.BigMapDraw();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -89,13 +88,6 @@
             this.panel_left.SuspendLayout();
             this.panel_center.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelBigMap
-            // 
-            this.panelBigMap.Location = new System.Drawing.Point(2, 56);
-            this.panelBigMap.Name = "panelBigMap";
-            this.panelBigMap.Size = new System.Drawing.Size(864, 600);
-            this.panelBigMap.TabIndex = 0;
             // 
             // panelMiniMap
             // 
@@ -373,8 +365,8 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBox1.Location = new System.Drawing.Point(114, 6);
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.checkBox1.Location = new System.Drawing.Point(114, 8);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(94, 17);
             this.checkBox1.TabIndex = 6;
@@ -406,7 +398,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.checkBox2.ForeColor = System.Drawing.SystemColors.MenuText;
             this.checkBox2.Location = new System.Drawing.Point(114, 29);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(117, 17);
@@ -532,11 +524,11 @@
             // panel_center
             // 
             this.panel_center.BackColor = System.Drawing.Color.Transparent;
+            this.panel_center.Controls.Add(this.bigMapController1);
             this.panel_center.Controls.Add(this.label4);
             this.panel_center.Controls.Add(this.comboBox1);
             this.panel_center.Controls.Add(this.button1);
             this.panel_center.Controls.Add(this.tabControl1);
-            this.panel_center.Controls.Add(this.panelBigMap);
             this.panel_center.Controls.Add(this.panelMiniMap);
             this.panel_center.Controls.Add(this.checkBox1);
             this.panel_center.Controls.Add(this.button_startRecordCellPassibility);
@@ -544,10 +536,28 @@
             this.panel_center.Controls.Add(this.button_stopRecordCellPassiblity);
             this.panel_center.Controls.Add(this.label3);
             this.panel_center.Controls.Add(this.checkBox2);
-            this.panel_center.Location = new System.Drawing.Point(101, 80);
+            this.panel_center.Location = new System.Drawing.Point(106, 96);
             this.panel_center.Name = "panel_center";
-            this.panel_center.Size = new System.Drawing.Size(1091, 664);
+            this.panel_center.Size = new System.Drawing.Size(1091, 603);
             this.panel_center.TabIndex = 20;
+            // 
+            // bigMapController1
+            // 
+            this.bigMapController1.BackColor = System.Drawing.Color.White;
+            this.bigMapController1.Location = new System.Drawing.Point(3, 56);
+            this.bigMapController1.Name = "bigMapController1";
+            this.bigMapController1.Size = new System.Drawing.Size(856, 544);
+            this.bigMapController1.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label4.Location = new System.Drawing.Point(261, 6);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Mouse Scroll Speed:";
             // 
             // comboBox1
             // 
@@ -561,22 +571,11 @@
             this.comboBox1.Size = new System.Drawing.Size(86, 21);
             this.comboBox1.TabIndex = 12;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(261, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Mouse Scroll Speed:";
-            // 
             // frmMap3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1266, 849);
             this.ControlBox = false;
@@ -620,7 +619,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelBigMap;
         private System.Windows.Forms.Panel panelMiniMap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
@@ -666,5 +664,6 @@
         private System.Windows.Forms.Panel panel_center;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
+        private BigMapDraw bigMapController1;
     }
 }
